@@ -5,7 +5,7 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
-def turn (board, input)
+def turn (input)
   until input > 1 && input < 9 
   puts "Please enter 1-9:"
 end
