@@ -32,4 +32,3 @@ def turn(board)
   move (board, index, character = X)
   valid_move?(board, index)
 end
-end
