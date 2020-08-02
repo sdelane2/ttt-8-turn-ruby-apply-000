@@ -29,8 +29,4 @@ def turn (board)
   puts "Please enter 1-9:"
   input = gets.strip
   input_to_index(input)
-  While input < '0'
-  puts "Please enter 1-9:"
-  While input > '8' 
-  puts "Please enter 1-9:"
 end
