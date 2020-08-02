@@ -29,4 +29,8 @@ def turn (board)
   puts "Please enter 1-9:"
   input = gets.strip
   input_to_index(input)
+  until input > 0 && input < 9 
+  puts "Please enter 1-9:"
+  valid_move?(board, index)
+  display_board
 end
