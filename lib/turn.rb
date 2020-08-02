@@ -28,4 +28,16 @@ def valid_move?(board, index)
     return false
   end
 end
-
+def turn (board)
+  puts "Please enter 1-9:"
+  input_to_index(input)
+  input.to_i - 1
+  move(board, index, character = "X")
+  board[index] = character
+  valid_move?(board, index)
+  if !position_taken?(board, index) && (index).between?(0,8)
+    return true
+  else 
+    return false
+  end
+end
