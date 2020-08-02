@@ -26,13 +26,4 @@ def valid_move?(board, index)
 end
 def turn
   puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
-  if valid_move?(index) 
-    move(index, character)
-      display_board
-    else
-      puts "Please enter 1-9:"
-      move = gets.chomp
-    end
-  end
+end
