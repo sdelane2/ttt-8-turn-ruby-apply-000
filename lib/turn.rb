@@ -25,10 +25,14 @@ def valid_move?(board, index)
     return FALSE
   end
 end
-def turn (board)
+def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   input_to_index(input)
-  if valid_move?(board, index, input)
+  if valid_move?(board, index)
     move(board, index, character = "X")
+  else
+    turn(board)
+  end
+end
 end
