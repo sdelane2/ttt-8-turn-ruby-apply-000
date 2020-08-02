@@ -9,7 +9,7 @@ def turn (board, input)
   puts "Please enter 1-9:" 
   while input > 9 && input < 1 
   puts "Please enter 1-9:"
-else
+end
 def input_to_index(input)
   input.to_i - 1
 end
