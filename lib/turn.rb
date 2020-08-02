@@ -32,5 +32,7 @@ def turn(board)
     if input > 8 || input < 0 
       turn(board)
     else valid_move?(board, index)
-      
+      move(board, index, character)
+    end
+  end
 end
