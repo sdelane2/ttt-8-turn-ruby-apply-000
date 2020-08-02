@@ -30,4 +30,6 @@ def turn(board)
   input = gets.strip
   input_to_index(input)
   move (board, index, character = X)
+  valid_move?(board, index)
+end
 end
