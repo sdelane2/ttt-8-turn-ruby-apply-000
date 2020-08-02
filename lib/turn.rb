@@ -29,6 +29,8 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   input_to_index(input)
-  move(board, index, character = "X")
-    board[index] = character
+    if input > 8 || input < 0 
+      turn(board)
+    else valid_move?(board, index)
+      
 end
