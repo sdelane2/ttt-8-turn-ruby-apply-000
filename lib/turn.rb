@@ -33,8 +33,7 @@ def turn(board)
      move(board, index, character = X)
      display_board
     else
-      puts "Please enter 1-9:"
-      input = gets.strip
+      turn(board)
     end
   end
 end
