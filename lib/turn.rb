@@ -5,6 +5,10 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+def turn (board, input)
+  puts "Please enter 1-9:"
+  input = gets.strip
+  
 def input_to_index(input)
   input.to_i - 1
 end
